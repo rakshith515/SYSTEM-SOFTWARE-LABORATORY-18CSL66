@@ -1,0 +1,13 @@
+// lex programs
+
+lex file.l
+cc lex.yy.c -ll
+./a.out
+
+
+// yacc programs
+
+lex file.l
+yacc -d file.y
+cc lex.yy.c y.tab.c -ll -w
+./a.out
